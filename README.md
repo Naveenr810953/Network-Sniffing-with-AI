@@ -1,67 +1,69 @@
-# 🛡️ AI Network Packet Sniffer
+ # 🛡️ AI Network Packet Sniffer
 
-A sophisticated web-based network monitoring tool that uses AI to detect and analyze security threats in real-time. This application simulates network traffic analysis with intelligent threat detection capabilities.
+A sophisticated web-based network monitoring tool that uses **AI** to detect and analyze security threats in real-time. This app simulates intelligent traffic analysis and alerts for high-severity threats only.
 
----
-
-## 🎯 Features
-
-- **Real-time Traffic Analysis** — Monitors TCP, UDP, ICMP, and encrypted traffic  
-- **AI-Powered Threat Detection** — Uses machine learning to identify security threats  
-- **Smart Browsing Simulation** — Only generates traffic when you're "browsing" websites  
-- **Website-Specific Detection** — Shows which websites you're visiting and their security risk levels  
-- **High-Severity Threat Focus** — Only alerts for significant security issues  
-- **Interactive Visualizations** — Real-time charts and graphs of network activity  
-- **Responsive Design** — Works seamlessly on desktop and mobile devices  
-- **Dark/Light Theme** — Toggle between themes for comfortable viewing  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![AI](https://img.shields.io/badge/AI-Powered-00BFFF?style=for-the-badge&logo=ai&logoColor=white)
 
 ---
 
-## 🖥️ How to Use
+## 📊 Features
 
-1. **Start Analysis** — Click the "Start Analysis" button to begin monitoring network traffic  
-2. **Browse Websites** — The system will simulate browsing various websites with different security risk levels  
-3. **Monitor Traffic** — Watch real-time visualizations of network packets and protocols  
-4. **Review Threats** — View AI-detected security threats with detailed information  
-5. **Stop Analysis** — Click "Stop Analysis" to halt monitoring when done  
-
----
-
-## 📊 Understanding the Interface
-
-- **Protocol Statistics** — View counts of TCP, UDP, ICMP, and encrypted packets  
-- **Traffic Charts** — Visualize network activity over time with interactive charts  
-- **Website Monitoring** — See which sites you're visiting and their risk levels  
-- **Threat Alerts** — Get notified of high-severity security issues only  
-- **AI Analysis Log** — View the AI's thought process and detection rationale  
+- **Real-time Traffic Analysis** – Monitors TCP, UDP, ICMP, and encrypted traffic  
+- **AI-Powered Threat Detection** – Uses ML logic to identify suspicious behavior  
+- **Smart Browsing Simulation** – Generates traffic only during "browsing" sessions  
+- **Website-Specific Detection** – Displays visited sites and their risk levels  
+- **High-Severity Threat Focus** – Notifies only for significant security threats  
+- **Interactive Visualizations** – Real-time charts and protocol graphs  
+- **Responsive UI** – Works on both desktop and mobile  
+- **Dark/Light Theme Toggle** – User-friendly visual themes  
 
 ---
 
-## 🛠️ Installation
+## 🎯 How It Works
 
-To run this application locally:
+The tool mimics a network environment with simulated traffic and applies AI logic to detect and classify threats:
 
-1. Clone or download the project files  
-2. Navigate to the project directory  
-3. Open `index.html` in your web browser:
+1. **Start Monitoring**  
+   - Click "Start Analysis" to initiate simulated traffic flow
 
-### Option 1: Open directly
+2. **Simulated Browsing**  
+   - Traffic data is generated only when you "browse" websites in-app
+
+3. **Live Visualization**  
+   - Packets are charted in real time by protocol (TCP, UDP, etc.)
+
+4. **AI Threat Detection**  
+   - The system flags only high-severity risks (ignores low-level noise)
+
+5. **Stop Monitoring**  
+   - Click "Stop Analysis" to end the simulation
+
+---
+
+## 🚀 Usage
+
+### Run Locally (No Installation Required)
+
+#### Option 1: Open Directly
 ```bash
-# Double-click the index.html file
+# Just double-click the index.html file
 ```
 
-### Option 2: Use a local server (recommended)
+#### Option 2: Use a Local Server (Recommended)
 
-#### Using Python
+**Using Python:**
 ```bash
 python -m http.server 8000
-# Then visit http://localhost:8000
+# Then open http://localhost:8000 in your browser
 ```
 
-#### Using Node.js
+**Using Node.js:**
 ```bash
 npx serve
-# Then visit the provided local address
+# Then open the provided local address in your browser
 ```
 
 ---
@@ -72,110 +74,93 @@ npx serve
 ai-network-sniffer/
 ├── index.html       # Main application file
 ├── README.md        # Project documentation
-└── assets/          # (Optional) Directory for additional assets
+└── assets/          # (Optional) Additional assets (CSS, JS, icons, etc.)
 ```
 
 ---
 
-## 🌐 Browser Compatibility
+## 🌐 UI Overview
 
-| Browser         | Supported | Notes                         |
-|-----------------|-----------|-------------------------------|
-| Chrome          | ✅         | Full support                  |
-| Firefox         | ✅         | Full support                  |
-| Safari          | ✅         | Full support                  |
-| Edge            | ✅         | Full support                  |
-| Mobile Browsers | ✅         | Touch controls supported      |
-
----
-
-## 🔧 Technologies Used
-
-| Technology       |                                                                  | Description                                      |
-|------------------|----------------------------------------------------------------------|--------------------------------------------------|
-| **HTML5**        | 🌐 ![HTML5](https://img.icons8.com/color/24/html-5--v1.png)          | Application structure and semantic markup        |
-| **CSS3**         | 🎨 ![CSS3](https://img.icons8.com/color/24/css3.png)                 | Modern styling with CSS variables and Flexbox/Grid |
-| **JavaScript**   | ⚙️ ![JavaScript](https://img.icons8.com/color/24/javascript.png)     | Application logic and interactivity              |
- 
-
----
-
-## 🎨 Customization
-
-You can customize the application by modifying:
-
-- **Threat Detection Sensitivity** — Adjust what constitutes a security threat  
-- **Website Database** — Add or modify websites and their risk profiles  
-- **Visual Theme** — Change colors and styling in the CSS variables  
-- **Chart Configurations** — Modify the data visualization settings  
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the project  
-2. Create a feature branch:
-```bash
-git checkout -b feature/AmazingFeature
-```
-
-3. Commit your changes:
-```bash
-git commit -m 'Add some AmazingFeature'
-```
-
-4. Push to the branch:
-```bash
-git push origin feature/AmazingFeature
-```
-
-5. Open a Pull Request  
-
----
-
-## 📝 TODO List
-
-- Add real network packet capture capabilities  
-- Implement more sophisticated AI threat detection algorithms  
-- Add historical data analysis and reporting  
-- Create export functionality for security reports  
-- Add user authentication and multiple profiles  
-- Implement network topology visualization  
+| Component            | Description                                             |
+|---------------------|---------------------------------------------------------|
+| Protocol Statistics | Real-time count of TCP, UDP, ICMP, and encrypted traffic|
+| Traffic Charts       | Interactive graphs of packet activity over time        |
+| Website Monitoring   | Shows visited websites and their risk assessment       |
+| Threat Alerts        | Only displays alerts for high-risk network behavior    |
+| AI Log               | Transparent detection rationale and decisions          |
 
 ---
 
 ## 📊 AI Capabilities
 
-The application demonstrates several AI-powered features:
+- **Anomaly Detection** – Learns baseline traffic and detects deviations  
+- **Pattern Recognition** – Flags behavior similar to known attack signatures  
+- **Risk Scoring** – Each website visited is rated based on simulated metrics  
+- **Threat Categorization** – Classifies incidents by type and severity  
 
-- **Behavioral Analysis** — Establishes normal network patterns and detects anomalies  
-- **Pattern Recognition** — Identifies known threat signatures in network traffic  
-- **Risk Assessment** — Evaluates website security risks based on traffic patterns  
-- **Threat Classification** — Categorizes detected threats by severity and type  
+---
+
+## 🔧 Technologies Used
+
+- **HTML5** – Structure of the web app  
+- **CSS3** – Styling and layout (Flexbox, Variables, Dark Mode)  
+- **JavaScript** – Core logic for traffic simulation and AI detection  
+- **Chart.js** – Real-time graphs and visual data analysis  
+- **Font Awesome** – Iconography for UI/UX
+
+---
+
+## 🛠️ Customization
+
+- **Threat Sensitivity** – Tweak thresholds for alerts in JavaScript logic  
+- **Website Database** – Add or modify website entries and risk profiles  
+- **Chart Settings** – Change chart colors, update frequency, etc.  
+- **Theme Colors** – Modify light/dark mode variables in CSS  
+
+---
+
+## 📝 TODO
+
+- 🧲 Add real network packet capture (e.g., via WebSockets or native modules)  
+- 🧠 Enhance AI model with real-time learning & improved false positive reduction  
+- 📈 Add export feature for reports (PDF/CSV)  
+- 🗃️ Implement historical session logging  
+- 🔐 Add authentication with multi-user profiles  
+- 🌐 Visualize network topology and traffic flows
+
+---
+
+ 
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repo  
+2. Create a branch:
+```bash
+git checkout -b feature/YourFeature
+```
+3. Make changes & commit:
+```bash
+git commit -m "Add YourFeature"
+```
+4. Push to GitHub:
+```bash
+git push origin feature/YourFeature
+```
+5. Open a Pull Request
 
 ---
 
 ## 👨‍💻 Developer
 
 **Naveen Kumar S**  
-📧 Email: navee4147@gmail.com.com  
+📧 Email: navee4147@gmail.com  
 💻 GitHub: [Naveenr810953](https://github.com/Naveenr810953)
 
 ---
 
-## 🙏 Acknowledgments
+## ⭐️ Show Your Support
 
-- Inspiration from network security tools like **Wireshark** and **Nmap**  
-- **Chart.js** library for data visualization capabilities  
-- **Font Awesome** for the comprehensive icon set  
-- The cybersecurity community for best practices and techniques  
-
----
-
-## 📞 Support
-
-If you have any questions or issues, please open an issue on GitHub or contact me at `navee4147@gmail.com`.  
-
-⭐️ If you find this project useful, please **give it a star** on GitHub!
+If you found this project useful, please **give it a star** on GitHub!
