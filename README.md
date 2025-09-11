@@ -1,4 +1,4 @@
- # 🛡️ AI Network Packet Sniffer
+  # 🛡️ AI Network Packet Sniffer
 
 A sophisticated web-based network monitoring tool that uses **AI** to detect and analyze security threats in real-time. This app simulates intelligent traffic analysis and alerts for high-severity threats only.
 
