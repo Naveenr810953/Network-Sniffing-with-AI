@@ -14,7 +14,7 @@ const state = {
         icmp: 0,
         encrypted: 0,
         other: 0
-    },
+    },    
     intervalId: null,
     trafficChart: null,
     distributionChart: null,
@@ -29,8 +29,8 @@ const state = {
     browsingActivity: false,
     browsingTimer: null
 };
-
-// DOM elements
+  
+// DOM elements  
 const statusDot = document.getElementById('status-dot');
 const statusText = document.getElementById('status-text');
 const tcpCountEl = document.getElementById('tcp-count');
@@ -109,7 +109,7 @@ const highRiskThreats = [
         detection: "Communication with known ransomware C2 servers",
         severity: "Critical",
         action: "Isolate affected system immediately"
-    },
+    },   
     {
         name: "Phishing Attempt",
         detection: "Suspicious redirect to fake login page",
@@ -118,7 +118,7 @@ const highRiskThreats = [
     }
 ];
 
-// Initialize charts
+// Initialize charts   
 function initCharts() {
     const trafficCtx = document.getElementById('trafficChart').getContext('2d');
     state.trafficChart = new Chart(trafficCtx, {
