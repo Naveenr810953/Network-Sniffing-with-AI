@@ -5,7 +5,7 @@ const state = {
         tcp: 0,
         udp: 0,
         icmp: 0,
-        encrypted: 0,
+        encrypted: 0,   
         other: 0
     },
     prevCounts: {
