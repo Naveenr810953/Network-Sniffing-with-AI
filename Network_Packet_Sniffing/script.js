@@ -1,6 +1,6 @@
 // State management
 const state = {
-    running: false,
+    running: false, 
     counts: {
         tcp: 0,
         udp: 0,
