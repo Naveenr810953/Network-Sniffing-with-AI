@@ -1,5 +1,5 @@
 // State management
-const state = { 
+const state = {  
     running: false, 
     counts: {
         tcp: 0,
